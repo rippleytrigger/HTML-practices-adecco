@@ -1,0 +1,27 @@
+body {
+    background-image: url('hoja_libreta.jpg');
+    font-size: 24px;
+}
+
+h1{
+    color: lightgreen;
+    font-size: 2em;
+}
+
+.centered-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.centered-list li {
+    text-align: center;
+    margin: 10px 0; /* Adjust this margin as needed */
+}
+
+.centered-list li::before {
+    content: "•"; /* Use your desired bullet character here */
+    margin-right: 5px; /* Adjust this margin as needed */
+}

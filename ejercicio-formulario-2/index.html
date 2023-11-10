@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario Grupo Campos</title>
+</head>
+<body>
+    <h1>Formulario de la Población</h1>
+    <form action="poblacion.php">
+        <label for="calle">Calle</label>
+        <input type="text" id="calle" />
+        <br/>
+
+        <label for="numero">Número</label>
+        <input type="number" id="numero" />
+        <br/>
+
+        <label for="piso">Piso</label>
+        <input type="text" id="piso" />
+        <br/>
+
+        <label for="puerta">Puerta</label>
+        <input type="text" id="puerta" />
+        <br/>
+
+        <label for="poblacion-input">Población</label>
+        <input list='provincias' id="poblacion-input"> 
+        <datalist id='provincias'>
+            <option>Barcelona</option>
+            <option>Girona</option>
+            <option>Tarragona</option>
+            <option>Lleida</option>
+        </datalist>
+        <br/>
+        
+        <label for="comentario">Comentario</label>
+        <textarea id="comentario" maxlength="500">
+        </textarea>
+        <br/>
+
+        <button type="submit">Enviar</button>
+
+    </form>
+</body>
+</html>
